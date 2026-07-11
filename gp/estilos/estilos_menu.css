@@ -1,0 +1,73 @@
+.btn-menu{
+	display: none;
+	padding: 20px;
+	background: #333333;
+	color: #ffffff;
+}
+.btn-menu .icono{
+	float: right;
+}
+.cont_menu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 20%;
+	min-width: 300px;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background: #333333;
+}
+.cont_menu .menu{
+	width: 100%;
+}
+.cont_menu ul{
+	list-style: none;
+}
+.cont_menu .menu li a{
+	color: #ffffff;
+	display: block; 
+	padding: 15px 20px;
+	background: #1abc9c;
+}.cont_menu .menu li a:hover{
+	background: #383db9;
+}
+.cont_menu .menu .icono{
+	font-size: 12px;
+	line-height: 18px;
+}
+.cont_menu .menu .icono.izquierda{
+	float: left;
+	margin-right: 10px;
+}
+.cont_menu .menu .icono.derecha{
+	float: right;
+	margin-left: 10px;
+}
+.cont_menu .menu ul{
+	display: none;
+}
+.cont_menu .menu ul li a{
+	background: #424242;
+	color: #e9e9e9;
+}
+.cont_menu .menu .activado > a{
+	background: #383db9;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 450px){
+	body {
+		padding-top: 80px;
+	}
+	.cont_menu{
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
+	}
+	.btn-menu {
+		display: block;
+	}
+	.cont_menu .menu{
+		display: none;
+	}
+}

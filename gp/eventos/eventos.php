@@ -5,6 +5,8 @@ session_start();
 include ("../conexion.php");
 include ("../funciones.php");
 
+$mensaje='';
+
 if(isset($_POST["hacer"]))
 {
 	$copyfile='';

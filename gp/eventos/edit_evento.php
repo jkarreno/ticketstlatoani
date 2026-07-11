@@ -90,14 +90,21 @@ include ("../conexion.php");
 				<div class="c80 ccenter">
 					<input type="text" name="cupo" id="cupo" value="'.$ResEvento["Cupo"].'">
                 </div>
+
+                <div class="c20 c_derecha">
+					Precio:
+				</div>
+				<div class="c40 ccenter">
+					<input type="number" name="precio" id="precio" value="'.$ResEvento["Precio"].'">
+                </div>
                 <div class="c20 c_derecha">
 					Donativo:
 				</div>
                 <div class="c20 ccenter">
 					<ul class="tg-list">
                         <li class="tg-list-item">
-                            <input class="tgl tgl-light" id="aco_'.$RResAco["Id"].'" name="aco_'.$RResAco["Id"].'" type="checkbox" value="1" '.($ResEvento["Donativo"] == 1 ? 'checked' : '').'/>
-                            <label class="tgl-btn" for="aco_'.$RResAco["Id"].'"></label>
+                            <input class="tgl tgl-light" id="donativo" name="donativo" type="checkbox" value="1"'.($ResEvento["Donativo"] == 1 ? ' checked' : '').'/>
+                            <label class="tgl-btn" for="donativo"></label>
                         </li>
                     </ul>
                 </div>

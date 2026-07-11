@@ -1,0 +1,212 @@
+a{
+    text-decoration: none;
+    color: #431146;
+}
+.carrito{
+    position: absolute;
+    top: calc(30% + 70px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10%;
+}
+    .carrito > div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .carrito > div.tits_carrito{
+        border-bottom: 1px solid #f1f1f1;
+        background-color: #cccccc;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .carrito .pago_ok{
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+        .carrito .pago_ok h1, .carrito .pago_ok h2{
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-family: Roboto;
+        }
+        .carrito .pago_ok h1{
+            font-weight: bold;
+            font-size: 30px;
+            color:#431146;
+        }
+        .carrito .pago_ok h2{
+            font-size: 20px;
+            color:#26b719;
+        }
+    .carrito .item_carrito{
+        border-bottom: 1px solid #cccccc;
+    }
+        .tit_gracias{
+            width: 100%;
+            text-align: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tit_id, .tit_boletos, .tit_subtotal, .tit_importe, .tit_descuento{
+            width: 10%;
+            text-align: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tit_id_mb, .tit_boletos_mb{
+            width: 10%;
+            text-align: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tit_fecha, .tit_fecha_mb{
+            width: 20%;
+            text-align: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tit_evento{
+            width: 30%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tit_evento_mb{
+            width: 60%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_id, .par_boletos, .par_subtotal, .par_descuento, .par_importe{
+            width: 10%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_id_mb, .par_boletos_mb{
+            width: 10%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_fecha, .par_fecha_mb{
+            width: 20%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_evento{
+            width: 30%;
+            text-align: left;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_evento_mb{
+            width: 60%;
+            text-align: left;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .par_id, .par_fecha, .par_boletos{
+            text-align: center;
+             padding: 10px 20px;
+            box-sizing: border-box;
+        }
+         .par_subtotal, .par_descuento, .par_importe{
+            text-align: right;
+             padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tot_tit{
+            width: 90%;
+            text-align: right;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .tot_cos{
+            width: 10%;
+            text-align: right;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+            .tot_cos a{
+                display: block;
+                width: 100%;
+                background-color: #431146;
+                color: #ffffff;
+                text-decoration: none;
+                text-align: center;
+                padding: 5px;
+                margin-top: 10px;
+            }
+            .tot_cos form{
+                margin-top: 20px;
+            }
+
+#txt_boletos{
+    display: none;
+}
+
+/*querys*/
+@media screen and (max-width: 1180px){
+    .carrito{
+        padding: 0 20px;
+    }
+    .tit_id, .tit_boletos, .tit_subtotal,
+    .par_id, .par_boletos, .par_subtotal,
+    .tot_cos{
+        width: 130px;
+    }
+    .tit_fecha,
+    .par_fecha {
+        width: 260px;
+    }
+    .tit_evento, 
+    .par_evento{
+        width: calc(100% - 650px);
+    }
+    .tot_tit{
+        width: calc(100% - 130px);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .carrito{
+        top: 160px;
+        padding: 0 20px;
+    }
+    .carrito > div.tits_carrito{
+        display: none;
+    }
+    .par_id{
+        width: 50px;
+        padding: 10px;
+    }
+    .par_evento{
+        width: calc(100% - 50px);
+    }
+    .par_boletos{
+        width: calc(100% - 390px);
+    }
+    #txt_boletos{
+        display: inline;
+    }
+}
+@media screen and (max-width: 470px){
+    .par_subtotal{
+        width: 100%;
+        text-align: right;
+    }
+    .par_fecha, .par_boletos{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 400px){
+    .par_fecha, .par_boletos{
+        width: 50%;
+    }
+    
+}

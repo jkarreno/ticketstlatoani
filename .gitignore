@@ -1,0 +1,9 @@
+#ads
+ads/
+
+#well-known/
+.well-known/
+
+temp/
+
+productos/

@@ -1,0 +1,317 @@
+.evento{
+    position: absolute;
+    top: calc(30% + 70px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10%;
+}
+    .evento div{
+        width: 50%;
+    }
+        .evento .img_evento{
+            padding: 0 20px;
+        }
+        .evento .img_evento img{
+            width: 100%;
+        }
+        .evento .det_evento{
+            padding: 5px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+        }
+            .evento .det_evento h1{
+                color: #431146;
+                font-size: 28px;
+                display: block;
+                width: 100%;
+            }
+            .evento .det_evento h2{
+                display: block;
+                width: 100%;
+                font-size: 18px;
+                color: #6f6f6f;
+            }
+            .evento .det_evento h3{
+                display: block;
+                width: 100%;
+                font-size: 12px;
+                color: #6f6f6f;
+            }
+                .evento .det_evento h2 a, .evento .det_evento h3 a{
+                    color: #6f6f6f;
+                    text-decoration: none;
+                }
+                .evento .det_evento h2 a:hover, .evento .det_evento h3 a:hover{
+                    color: #26b719;
+                }
+            .evento .desc_eve, .evento .venta_boletos{
+                width: 100%;
+                display: flex;
+                padding: 20px 0px;
+                color: #431146; 
+                font-size: 18px;
+                text-align: justify;
+            }
+            .evento .venta_boletos{
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+                .evento .venta_boletos div{
+                    width: 100%;
+                    padding: 5px;
+                    border-bottom: #43114685 solid 1px;
+                }
+                .tit_venta_boletos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .tit_venta_boletos span{
+                    display: block;
+                    width: 50%;
+                }
+
+/*forma venta de boletos*/
+form {
+    width: 100%;
+    text-align: left;
+}
+  
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 26px !important;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 !important;
+}
+.value-button:hover {
+    cursor: pointer;
+    
+}
+
+/*ubicación y lugar*/
+.det_lugar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+    .det_lugar h1{
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        color: #431146;
+        margin-bottom: 10px;
+    }
+    .det_lugar div{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+        color: #431146;
+        padding: 20px;
+    }
+        .det_lugar div p{
+            font-size: 16px; 
+            display: block;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    div.det_lugar_mas {
+        width: 100%;
+        text-align:right;
+        padding: 20px 10px;
+    }
+
+form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 60px;
+    height: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    width: 90%;
+    border: 0px;
+    background-color: #431146;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+/*querys*/
+@media screen and (max-width: 800px){
+    .evento{
+        top: 160px;
+        padding: 0 20px;
+    }
+    .evento .venta_boletos div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .evento .venta_boletos div:nth-of-type(1){
+        order: 1;
+    }
+    .evento .venta_boletos div:nth-of-type(2){
+        order: 3;
+    }
+    .evento .venta_boletos div:nth-of-type(3){
+        order: 5;
+        margin-bottom: 0px;
+    }
+    .evento .venta_boletos div:nth-of-type(4){
+        order: 2;
+    }
+    .evento .venta_boletos div:nth-of-type(5){
+        order: 4;
+    }
+    .evento .venta_boletos div:nth-of-type(6){
+        order: 6;
+        display: flex;
+    }
+
+    input[type=button]{
+        width: 90%;
+    }
+
+    form #decrease, form #increase{
+        margin-top: 19px;
+    }
+}
+@media screen and (max-width: 400px){
+    .evento div{
+        width: 100%;
+    }
+}
+
+/*MODAL*/
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1000; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		/*padding: 20px;*/
+		border: 1px solid #888;
+		width: 80%;
+		height: 80%;
+		overflow: auto;
+		
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		-webkit-animation-name: animatetop;
+		-webkit-animation-duration: 0.4s;
+		animation-name: animatetop;
+		animation-duration: 0.4s
+    }
+
+	.modal-header{
+		border: 0px !important;
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+		from {top:-300px; opacity:0} 
+		to {top:0; opacity:1}
+	}
+	
+	@keyframes animatetop {
+		from {top:-300px; opacity:0}
+		to {top:0; opacity:1}
+	}
+	
+	/* The Close Button */
+	.closse {
+		color: #FFF;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.closse:hover,
+	.closse:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.modal-header {
+		padding: 2px 16px;
+		background-color: #a0c7c5;
+		color: #606060;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+		.modal-header h2{
+			color: #FFF;
+			display: block;
+			padding: 15px;
+			width: calc(100% - 30px);
+		}
+	
+	.modal-body {
+        /*padding: 2px 16px; */
+		height: 100%;
+		font-family: 'Roboto', sans-serif;
+    }
+	
+	.modal-footer {
+		padding: 2px 16px;
+		background-color: #39657d;
+		color: #ffffff;
+	}
